@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Pie Chart Generator</title>
+    <script src="chart.js" defer></script>
+</head>
+<body>
+    <h1>Dynamic Pie Chart Generator</h1>
+
+    <label for="data">Data (comma separated, example, "30,60,10"):</label><br>
+    <input type="text" id="data" name="data"><br>
+
+    <label for="labels">Labels (comma separated, example, "Housing,Utilities,Transportation"):</label><br>
+    <input type="text" id="labels" name="labels"><br>
+
+    <button onclick="generateChart()">Generate Chart</button>
+
+    <h2>Generated Chart:</h2>
+    <img id="chart" src="" alt="Your Chart Will Appear Here">
+</body>
+</html>

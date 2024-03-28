@@ -23,19 +23,16 @@ http.createServer(function(req,res) {
  
  switch(path) {
             case '':
-                serveStaticFile(res, '/public/index.html', 'text/html');
+                serveStaticFile(res, '/public/chart.html', 'text/html');
                 break;
-            case '/style.css':
-                serveStaticFile(res, '/public/style.css', 'text/css');
+            case '/chart':
+                serveStaticFile(res, '/public/chart.html', 'text/html');
                 break;
-            case '/index':
-                serveStaticFile(res, '/public/index.html', 'text/html');
-                break;
-            case '/logo.webp':
-                 serveStaticFile(res, '/public/logo.webp', 'image/webp');
+            case '/chart.js':
+                 serveStaticFile(res, '/public/chart.js', 'text/javascript');
                  break;
             default:
-            serveStaticFile(res, '/public/404.html', 'text/html', 404);
+            serveStaticFile(res, '/public/chart.html', 'text/html', 404);
             break;
         }
  
